@@ -12,7 +12,7 @@
  </script>
 ```
 
-# Authorization with fraud
+# Authorization with fraud_session_id
 
 ### fraud_session_id below is from the client : sessionKey above
 ``` bash
@@ -33,7 +33,7 @@ curl https://finix.sandbox-payments-api.com/authorizations \
 	}'
 ```
 
-# Transfer with fraud
+# Transfer with fraud_session_id
 
 ### fraud_session_id below is from the client : sessionKey above
 ``` bash
