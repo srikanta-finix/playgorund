@@ -1,7 +1,7 @@
 # Client side changes
 ### Include finix javascript as follows to get session_id 
 ``` javascript
- <script src='http://.../finix.js' async></script>
+ <script src='http://https://forms.finixpymnts.com/finix.js' async></script>
 
  <script type="text/javascript">
 		/* 1st argument -> environment. Values are qa, sandbox, production */
