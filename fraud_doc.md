@@ -1,5 +1,5 @@
 # Client side changes
-### Include finix java script as follow
+### Include finix javascript as follows to get session_id 
 ``` javascript
  <script src='http://.../finix.js' async></script>
 
@@ -8,7 +8,7 @@
 		/* 1st argument -> merchantId*/
     	const FinixAuth = window.Finix.Auth('qa', 'MUeDVrf2ahuKc9Eg5TeZugvs')
 
-		const sessionKey = FinixAuth.getSessionKey();
+	const sessionKey = FinixAuth.getSessionKey();
  </script>
 ```
 
@@ -21,7 +21,7 @@ curl https://finix.sandbox-payments-api.com/authorizations \
     -u  USsRhsHYZGBPnQw8CByJyEQW:8a14c2f9-d94b-4c72-8f5c-a62908e5b30e \
     -d '
 	{
-		"fraud_session_id": "FSpowiefljwlef98732rjlfjlw",
+	    "fraud_session_id": "FSpowiefljwlef98732rjlfjlw",
 	    "source": "PIe2YvpcjvoVJ6PzoRPBK137",
 	    "merchant_identity": "IDpYDM7J9n57q849o9E9yNrG",
 	    "tags": {
@@ -42,7 +42,7 @@ curl https://finix.sandbox-payments-api.com/transfers \
     -u  USsRhsHYZGBPnQw8CByJyEQW:8a14c2f9-d94b-4c72-8f5c-a62908e5b30e \
     -d '
 	{
-		"fraud_session_id": "FSpowiefljwlef98732rjlfjlw",
+	    "fraud_session_id": "FSpowiefljwlef98732rjlfjlw",
 	    "merchant": "MUeDVrf2ahuKc9Eg5TeZugvs",
 	    "currency": "USD",
 	    "amount": 662154,
